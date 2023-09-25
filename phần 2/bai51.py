@@ -1,1 +1,20 @@
-#Chua Lam!!!
+def kiem_tra_mat_khau(password):
+    if len(password) < 8:
+        return False
+    has_uppercase = False
+    has_lowercase = False
+    has_digit = False
+    for char in password:
+        if char.isupper():
+            has_uppercase = True
+        elif char.islower():
+            has_lowercase = True
+        elif char.isdigit():
+            has_digit = True
+    return has_uppercase and has_lowercase and has_digit
+
+mat_khau = input("Nhập mật khẩu: ")
+if kiem_tra_mat_khau(mat_khau):
+    print("Mật khẩu là tốt.")
+else:
+    print("Mật khẩu không đạt yêu cầu.")

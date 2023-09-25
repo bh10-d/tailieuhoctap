@@ -1,3 +1,7 @@
 from check import *
 n = int(input("Nhập vào một số để kiểm tra: "))
-checkEvenOdd(n)
+if checkEvenOdd(n):
+    print("Số chẵn: ",n)
+else:
+    print("Số lẻ: ",n)
+

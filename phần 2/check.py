@@ -1,8 +1,10 @@
 def checkEvenOdd(x):
     if x%2 == 0:
-        print(x, "là số chẵn") 
+        return True
+        # print(x, "là số chẵn")
     else:
-        print(x, "là số lẻ")
+        return False
+        # print(x, "là số lẻ")
 
 def compareString(s1,s2):
     len1 = len(s1) 
